@@ -6,5 +6,9 @@
   {
     "name": "Blog",
     "path": "/blog/"
+  },
+  {
+    "name": "Best Post",
+    "path": "/blog/example-post"
   }
 ]
