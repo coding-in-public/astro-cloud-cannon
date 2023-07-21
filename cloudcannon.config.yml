@@ -7,6 +7,8 @@
 collections_config:
   posts:
     path: src/content/blog
+  site_data:
+    path: src/data
 
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
