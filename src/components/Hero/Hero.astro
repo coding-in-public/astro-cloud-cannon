@@ -1,0 +1,37 @@
+---
+type Props = {
+  title: string;
+  content: string;
+  image: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+  };
+  link: {
+    href: string;
+    style: "primary" | "secondary";
+    text: string;
+  };
+};
+
+const { title, content, image, link } = Astro.props;
+---
+
+<section class="container about" aria-label={title}>
+  <img
+    src={image.src}
+    alt={image.alt}
+    width={image.width}
+    height={image.height}
+  />
+  <div class="content">
+    <h1 class="h1">{title}</h1>
+    <p>
+      {content}
+    </p>
+    <a href={link.href} class={`link filled ${link.style}`}>
+      <span>{link.text}</span>
+    </a>
+  </div>
+</section>

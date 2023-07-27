@@ -1,31 +1,24 @@
 ---
 // component imports
-import Link from "../components/Link.astro";
+import Link from "../components-original/Link.astro";
+import Hero from "../components/Hero/Hero.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="About" description="My About Page">
-  <section class="container about" aria-label="About Me">
-    <img
-      src="/images/headshot.jpg"
-      alt="My headshot"
-      width="200"
-      height="330"
-    />
-    <div class="content">
-      <h1 class="h1">My Blog</h1>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quidem
-        tempora beatae mollitia architecto optio sapiente repellendus natus.
-        Minima reiciendis voluptatibus ratione quos exercitationem expedita
-        commodi doloremque. Repellendus nulla nihil animi fuga voluptas amet
-        fugit eveniet voluptates ab labore. Magnam.
-      </p>
-      <Link
-        href="mailto:chris@codinginpublic.dev"
-        style="primary"
-        text="Contact Me"
-      />
-    </div>
-  </section>
+  <Hero
+    title="About Me"
+    content="Amet culpa deserunt dolore Lorem nulla do adipisicing velit deserunt eiusmod non do incididunt. Eiusmod aute eiusmod esse est id adipisicing do. Ullamco velit ea sunt eiusmod proident"
+    image={{
+      src: "/images/headshot.jpg",
+      alt: "My headshot",
+      width: 200,
+      height: 330,
+    }}
+    link={{
+      href: "mailto:chris@codinginpublic.dev",
+      style: "primary",
+      text: "Contact Me",
+    }}
+  />
 </MainLayout>
