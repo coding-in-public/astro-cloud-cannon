@@ -1,38 +1,45 @@
-# Read the CloudCannon documentation for more information on how to use this file:
-# https://cloudcannon.com/documentation/articles/setting-global-configuration/?ssg=Astro
-
-# Collections are related sets of content files, typically grouped by folder.
-# Here you can define your collections, as well as any
-# CloudCannon configuration specific to those collections.
+paths:
+  uploads: public/images
+  static: public
 collections_config:
   posts:
     path: src/content/blog
+    output: false
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schema_key: _schema
   site_data:
     path: src/data
-
-# Control which collections are displayed in the CloudCannon site navigation,
-# and how those collections are grouped.
-collection_groups:
-
-# Control which data sets are available to populate select and multiselect inputs.
-data_config:
-
-# Base path to your source files, relative to the root folder of your repository.
-source:
-
+    output: false
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schema_key: _schema
+  pages:
+    path: src/content/pages
+    output: true
+    url: '"/[slug]/"'
+    icon: notes
+    _editables: {}
+    _enabled_editors:
+      - visual
+    _inputs: {}
+    _select_data: {}
+    _structures: {}
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas: {}
+    schema_key: _schema
 _inputs:
   src:
     type: image
-
-# The locations of various types of files within your site.
-# Each path is relative to your site's source folder.
-paths:
-  static: public
-  uploads: public/images
-
-# Lets you control the look and behaviour of the Source Editor.
-source_editor:
-
-# Timezone of your site in IANA format. This is used by date and datetime inputs
-# within the CloudCannon Data Editor.
+    cascade: true
+_select_data: {}
+_structures: {}
+_editables: {}
+data_config: {}
 timezone: Etc/UTC
