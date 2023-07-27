@@ -23,5 +23,10 @@
     "postcss": "^8.4.21",
     "postcss-preset-env": "^7.8.3",
     "sharp": "^0.31.3"
+  },
+  "devDependencies": {
+    "@bookshop/astro-engine": "3.6.5",
+    "@bookshop/browser": "3.6.5",
+    "@bookshop/generate": "3.6.5"
   }
 }
