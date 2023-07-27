@@ -21,7 +21,7 @@ collections_config:
   pages:
     path: src/content/pages
     output: true
-    url: '"/[slug]/"'
+    url: "/[slug]/"
     icon: notes
     _editables: {}
     _enabled_editors:
