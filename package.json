@@ -17,6 +17,7 @@
     "@astrojs/image": "^0.12.2-beta.0",
     "@astrojs/rss": "^2.0.0",
     "@astrojs/sitemap": "^1.0.0",
+    "@bookshop/astro-bookshop": "3.6.5",
     "astro": "^2.0.0-beta.3",
     "astro-icon": "^0.8.0",
     "postcss": "^8.4.21",
